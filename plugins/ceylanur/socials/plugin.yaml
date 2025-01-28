@@ -1,0 +1,24 @@
+plugin:
+    name: 'ceylanur.socials::lang.plugin.name'
+    description: 'ceylanur.socials::lang.plugin.description'
+    author: ceylanur
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Видимость социальных сетей'
+        url: /
+        icon: icon-magnet
+        sideMenu:
+            side-menu-item:
+                label: 'На шапке сайта'
+                url: ceylanur/socials/navbarsocialscontroller/update/1
+                icon: icon-header
+            side-menu-item2:
+                label: 'На контактной форме'
+                url: ceylanur/socials/contactformsocialscontroller/update/1
+                icon: icon-envelope-o
+            side-menu-item3:
+                label: 'На подвале сайта'
+                url: ceylanur/socials/footersocialscontroller/update/1
+                icon: icon-ticket

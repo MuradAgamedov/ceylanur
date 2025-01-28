@@ -1,0 +1,26 @@
+v1.0.1:
+    - 'Initialize plugin'
+v1.0.2:
+    - 'Created table ceylanur_modules_home_page_first_section'
+    - builder_table_create_ceylanur_modules_home_page_first_section.php
+v1.0.3:
+    - 'Created table ceylanur_modules_home_page_second_section'
+    - builder_table_create_ceylanur_modules_home_page_second_section.php
+v1.0.4:
+    - 'Updated table ceylanur_modules_home_page_second_section'
+    - builder_table_update_ceylanur_modules_home_page_second_section.php
+v1.0.5:
+    - 'Updated table ceylanur_modules_home_page_second_section'
+    - builder_table_update_ceylanur_modules_home_page_second_section_2.php
+v1.0.6:
+    - 'Created table ceylanur_modules_'
+    - builder_table_create_ceylanur_modules_.php
+v1.0.7:
+    - 'Updated table ceylanur_modules_'
+    - builder_table_update_ceylanur_modules_home_page_third_section.php
+v1.0.8:
+    - 'Created table ceylanur_modules_home_page_fourth_section'
+    - builder_table_create_ceylanur_modules_home_page_fourth_section.php
+v1.0.9:
+    - 'Created table ceylanur_modules_home_page_fifth_section'
+    - builder_table_create_ceylanur_modules_home_page_fifth_section.php

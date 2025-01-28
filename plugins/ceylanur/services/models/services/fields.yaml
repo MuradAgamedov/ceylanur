@@ -1,0 +1,63 @@
+fields:
+    image:
+        label: Изоброжение
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    card_image:
+        label: 'Мини изоброжение'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    title:
+        label: Заголовок
+        span: auto
+        required: 1
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        required: 1
+        preset:
+            field: title
+            type: slug
+        type: text
+    text:
+        label: Текст
+        size: huge
+        span: full
+        required: 1
+        type: richeditor
+    status:
+        label: 'Видна на странице'
+        span: auto
+        required: 0
+        type: checkbox
+    reversed:
+        label: Перевернутый
+        span: auto
+        type: checkbox
+    meta_title:
+        label: 'Meta title'
+        span: full
+        type: text
+    meta_keywords:
+        label: 'Meta keywords'
+        size: large
+        span: full
+        type: textarea
+    meta_description:
+        label: 'Meta description'
+        size: huge
+        span: full
+        type: textarea

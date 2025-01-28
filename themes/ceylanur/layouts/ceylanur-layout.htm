@@ -1,0 +1,33 @@
+[footer]
+
+[meta_lang]
+
+[favicon]
+
+[sitePicker]
+
+[seo_links]
+
+[seo_scripts]
+
+[header]
+==
+
+
+
+
+
+<!DOCTYPE html>
+
+{% component 'meta_lang' %}
+  {% partial 'head' %}
+  <body>
+    {% component 'header' %}
+    <main>{% page %}</main>
+
+
+
+  {% component 'footer' %}
+  {% partial 'scripts' %}
+  </body>
+</html>

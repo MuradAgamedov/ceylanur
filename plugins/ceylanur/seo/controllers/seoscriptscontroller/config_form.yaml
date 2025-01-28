@@ -1,0 +1,10 @@
+name: SeoScriptsController
+form: $/ceylanur/seo/models/seoscripts/fields.yaml
+modelClass: Ceylanur\Seo\Models\SeoScripts
+defaultRedirect: ceylanur/seo/seoscriptscontroller
+create:
+    redirect: 'ceylanur/seo/seoscriptscontroller/update/:id'
+    redirectClose: ceylanur/seo/seoscriptscontroller
+update:
+    redirect: ceylanur/seo/seoscriptscontroller
+    redirectClose: ceylanur/seo/seoscriptscontroller

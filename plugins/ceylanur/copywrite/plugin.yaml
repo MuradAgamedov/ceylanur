@@ -1,0 +1,11 @@
+plugin:
+    name: 'ceylanur.copywrite::lang.plugin.name'
+    description: 'ceylanur.copywrite::lang.plugin.description'
+    author: ceylanur
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Авторские права'
+        url: ceylanur/copywrite/copywritecontroller
+        icon: icon-copyright

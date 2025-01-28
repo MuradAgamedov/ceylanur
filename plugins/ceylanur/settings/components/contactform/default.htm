@@ -1,0 +1,156 @@
+<!-- Contact -->
+
+<section class="contact">
+    <div class="container">
+        <div class="contact__top">
+            <h2 class="{% if this.page.url == '/elaqe' or this.page.url == '/kontakt' or this.page.url == '/contact' %}reveal_first{% else %}reveal{% endif %}">{{'contact_form.contact_form_title' | _}}</h2>
+            <div class="reveal contact__details flex flex-direct-col">
+                <a href="mailto:{{email}}" target="_blank" aria-label="{{email}}" title="{{email}}">
+                    {{email}}
+                </a>
+                <a href="tel:{{whatsapp_number}}" aria-label="{{whatsapp_number}}"
+                    title="{{whatsapp_number}}" target="_blank">{{whatsapp_number}}</a>
+                <h4>{{'contact_form.contact_from_social_networks' | _}}:</h4>
+                <div class="socials">
+                    <ul class="flex-center contact__socials">
+
+                        {% if  contactFormSocials.facebook_seen %}
+                        <li>
+                            <a href="{{facebook_link}}" title="facebook" aria-label="facebook" target="_blank">
+                                <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if  contactFormSocials.tiktok_seen %}
+                        <li>
+                            <a href="{{tiktok_link}}" title="tiktok" aria-label="tiktok" target="_blank">
+                                <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if contactFormSocials.telegram_seen %}
+                        <li>
+                            <a href="{{telegram_link}}" title="telegram" aria-label="telegram" target="_blank">
+                                <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if  contactFormSocials.youtube_seen %}
+                        <li>
+                            <a href="{{youtube_link}}" title="youtube" aria-label="youtube" target="_blank">
+                                <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if  contactFormSocials.instagram_seen %}
+                        <li>
+                            <a href="{{instagram_link}}" title="instagram" aria-label="instagram" target="_blank">
+                                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if contactFormSocials.twitter_seen %}
+                        <li>
+                            <a href="{{twitter_link}}" title="twitter" aria-label="twitter" target="_blank">
+                                <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        {% endif %}
+
+                        {% if  contactFormSocials.whatsapp_seen %}
+                        <li class="flex-center">
+                            <a href="https://wa.me/{{whatsapp_number}}" target="_blank" title="" aria-label="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18.9852 16.9453C18.696 17.764 17.5464 18.4412 16.6296 18.6393C16.002 18.7725 15.1836 18.8779 12.426 17.7352C9.3288 16.452 5.028 11.8812 5.028 8.83945C5.028 7.29099 5.9208 5.48789 7.482 5.48789C8.2332 5.48789 8.3988 5.50254 8.646 6.09551C8.9352 6.79412 9.64081 8.51535 9.7248 8.6918C10.0716 9.41561 9.37199 9.83934 8.86439 10.4695C8.70239 10.6592 8.51881 10.8643 8.72401 11.2172C8.92801 11.5629 9.6336 12.7129 10.6704 13.6359C12.0096 14.8291 13.0956 15.21 13.4844 15.3721C13.7736 15.4921 14.1192 15.4641 14.3304 15.2385C14.598 14.9492 14.9304 14.4692 15.2688 13.9963C15.5076 13.6578 15.8112 13.6155 16.1292 13.7355C16.344 13.81 19.074 15.0778 19.1892 15.2807C19.2744 15.4283 19.2744 16.1267 18.9852 16.9453ZM12.0024 0H11.9964C5.38079 0 0 5.38242 0 12C0 14.624 0.846008 17.0584 2.28481 19.033L0.789606 23.492L5.40121 22.0184C7.29841 23.2739 9.5628 24 12.0024 24C18.618 24 24 18.6176 24 12C24 5.38242 18.618 0 12.0024 0Z"
+                                        fill="#9dbbc9" />
+                                </svg>
+                            </a>
+                        </li>
+                        {% endif %}
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="reveal contact__bottom">
+            <form method="POST" data-request="onFeedBack" class="contact__form">
+                <div class="contact__form-inputs flex align-items-center">
+                    <label class="flex flex-direct-col" id="form_label">
+                    <input 
+                        type="text" 
+                        name="name" 
+                        aria-label="{{'contact_form.placeholder_name' | _}}" 
+                        id="" placeholder="{{'contact_form.placeholder_name' | _}}:"
+                    />
+                    <span></span>
+                    </label>
+                    <label class="flex flex-direct-col" id="form_label">
+                        <input
+                            type="email"
+                            name="email"
+                            aria-label="{{'contact_form.placeholder_email' | _}}"
+                            id=""
+                            placeholder="{{'contact_form.placeholder_email' | _}}:"
+                        />
+                        <span></span>
+                    </label>
+                </div>
+                <label class="flex flex-direct-col" id="form_label message">
+                    <textarea
+                        name="message"
+                        id=""
+                        aria-label="{{'contact_form.placeholder_message' | _}}"
+                        placeholder="{{'contact_form.placeholder_message' | _}}"
+                    ></textarea>
+                    <span></span>
+                </label>
+                <button type="submit" data-request="onCalculate" class="flex-center btn" aria-label="{{'contact_form.button_send' | _}}">
+                {{'contact_form.button_send' | _}}
+              </button>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- Modal -->
+<div class="backdrop flex-center flex-direct-col">
+    <div id="modal" class="modal flex align-items-center">
+        <div class="modal__img">
+            <img src="{{success_form_image_first}}" alt="{{'succes_modal.first' | _}}" />
+        </div>
+        <div class="modal__content">
+            <h3>
+                {{'succes_modal.first' | _}}
+            </h3>
+        </div>
+        <button id="modal_close" type="button" aria-label="">
+            <svg
+              width="52"
+              height="52"
+              viewBox="0 0 52 52"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="14.9668"
+                y="11.0234"
+                width="37"
+                height="2"
+                rx="1"
+                transform="rotate(50.5995 14.9668 11.0234)"
+                fill="#D9D9D9"
+              />
+              <rect
+                x="38.5898"
+                y="12.4219"
+                width="37"
+                height="2"
+                rx="1"
+                transform="rotate(129.984 38.5898 12.4219)"
+                fill="#D9D9D9"
+              />
+            </svg>
+          </button>
+    </div>
+</div>

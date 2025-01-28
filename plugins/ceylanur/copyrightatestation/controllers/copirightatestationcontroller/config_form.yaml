@@ -1,0 +1,10 @@
+name: CopirightAtestationController
+form: $/ceylanur/copyrightatestation/models/copirightatestation/fields.yaml
+modelClass: Ceylanur\Copyrightatestation\Models\CopirightAtestation
+defaultRedirect: ceylanur/copyrightatestation/copirightatestationcontroller
+create:
+    redirect: 'ceylanur/copyrightatestation/copirightatestationcontroller/update/:id'
+    redirectClose: ceylanur/copyrightatestation/copirightatestationcontroller
+update:
+    redirect: ceylanur/copyrightatestation/copirightatestationcontroller
+    redirectClose: ceylanur/copyrightatestation/copirightatestationcontroller

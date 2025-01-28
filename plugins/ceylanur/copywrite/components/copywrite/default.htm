@@ -1,0 +1,32 @@
+       {% put page_seo_links %}
+            {{seo.links | raw}}
+            <meta name="keywords" content="{{seo.meta_keywords}}">
+            <meta name="description" content="{{seo.meta_description}}">
+            <title>{{seo.meta_title}}</title>
+        {% endput %}
+    <main>
+      <section class="copy reveal_first">
+        <div class="container">
+          <div class="copy__details flex flex-direct-col">
+            <h3>{{'copywrite_page.title' | _}}</h3>
+            {% for copyright in copyrights %}
+                   <h4>
+                     {{ loop.index }}. {{copyright.title}}
+                    </h4>
+            <div>
+              <p>
+                   {% set replacements = {'&nbsp;': ' '} %}
+                {% set cleaned_description = copyright.text | striptags('<br>') | replace(replacements) %}
+                {% set trimmed_description = cleaned_description  %}
+                {{trimmed_description | raw}}
+              </p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {% put page_seo_scripts %}
+        {{seo.scripts | raw}}
+    {% endput %}

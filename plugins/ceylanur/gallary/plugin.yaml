@@ -1,0 +1,24 @@
+plugin:
+    name: 'ceylanur.gallary::lang.plugin.name'
+    description: 'ceylanur.gallary::lang.plugin.description'
+    author: ceylanur
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Галарея
+        url: /
+        icon: icon-image
+        sideMenu:
+            side-menu-item:
+                label: Жанры
+                url: ceylanur/gallary/genrescontroller
+                icon: icon-street-view
+            side-menu-item2:
+                label: Техники
+                url: ceylanur/gallary/techniquescontroller
+                icon: icon-street-view
+            side-menu-item3:
+                label: Рисунки
+                url: ceylanur/gallary/imagescontroller
+                icon: icon-file-image-o

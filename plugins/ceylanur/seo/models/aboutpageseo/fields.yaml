@@ -1,0 +1,26 @@
+fields:
+    meta_title:
+        label: 'Meta title'
+        span: full
+        type: text
+    meta_keywords:
+        label: 'Meta keywords'
+        size: large
+        span: full
+        type: textarea
+    meta_description:
+        label: 'Meta description'
+        size: huge
+        span: full
+        type: textarea
+    links:
+        label: 'Links for about page'
+        size: giant
+        span: full
+        type: textarea
+    scripts:
+        label: 'Scripts for about page'
+        size: giant
+        span: full
+        required: 1
+        type: textarea

@@ -1,0 +1,29 @@
+v1.0.1:
+    - 'Initialize plugin'
+v1.0.2:
+    - 'Created table ceylanur_messages_contact'
+    - builder_table_create_ceylanur_messages_contact.php
+v1.0.3:
+    - 'Updated table ceylanur_messages_contact'
+    - builder_table_update_ceylanur_messages_contact.php
+v1.0.4:
+    - 'Updated table ceylanur_messages_contact'
+    - builder_table_update_ceylanur_messages_contact_2.php
+v1.0.5:
+    - 'Created table ceylanur_messages_order_form'
+    - builder_table_create_ceylanur_messages_order_form.php
+v1.0.6:
+    - 'Updated table ceylanur_messages_order_form'
+    - builder_table_update_ceylanur_messages_order_form.php
+v1.0.7:
+    - 'Created table ceylanur_messages_order_service_form'
+    - builder_table_create_ceylanur_messages_order_service_form.php
+v1.0.8:
+    - 'Updated table ceylanur_messages_contact'
+    - builder_table_update_ceylanur_messages_contact_3.php
+v1.0.9:
+    - 'Updated table ceylanur_messages_order_form'
+    - builder_table_update_ceylanur_messages_order_form_2.php
+v1.0.10:
+    - 'Updated table ceylanur_messages_order_service_form'
+    - builder_table_update_ceylanur_messages_order_service_form.php

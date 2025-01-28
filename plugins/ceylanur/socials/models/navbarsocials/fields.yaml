@@ -1,0 +1,29 @@
+fields:
+    facebook_seen:
+        label: Facebook
+        span: auto
+        type: checkbox
+    tiktok_seen:
+        label: Tiktok
+        span: auto
+        type: checkbox
+    telegram_seen:
+        label: Telegram
+        span: auto
+        type: checkbox
+    youtube_seen:
+        label: Youtube
+        span: auto
+        type: checkbox
+    whatsapp_seen:
+        label: Whatsapp
+        span: auto
+        type: checkbox
+    instragram_seen:
+        label: Instragram
+        span: auto
+        type: checkbox
+    twitter_seen:
+        label: Twitter
+        span: auto
+        type: checkbox

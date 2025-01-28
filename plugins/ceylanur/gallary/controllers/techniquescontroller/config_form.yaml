@@ -1,0 +1,10 @@
+name: TechniquesController
+form: $/ceylanur/gallary/models/techniques/fields.yaml
+modelClass: Ceylanur\Gallary\Models\Techniques
+defaultRedirect: ceylanur/gallary/techniquescontroller
+create:
+    redirect: 'ceylanur/gallary/techniquescontroller/update/:id'
+    redirectClose: ceylanur/gallary/techniquescontroller
+update:
+    redirect: ceylanur/gallary/techniquescontroller
+    redirectClose: ceylanur/gallary/techniquescontroller

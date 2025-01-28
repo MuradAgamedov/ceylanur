@@ -1,0 +1,10 @@
+name: GenresController
+form: $/ceylanur/gallary/models/genres/fields.yaml
+modelClass: Ceylanur\Gallary\Models\Genres
+defaultRedirect: ceylanur/gallary/genrescontroller
+create:
+    redirect: 'ceylanur/gallary/genrescontroller/update/:id'
+    redirectClose: ceylanur/gallary/genrescontroller
+update:
+    redirect: ceylanur/gallary/genrescontroller
+    redirectClose: ceylanur/gallary/genrescontroller

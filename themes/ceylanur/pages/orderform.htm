@@ -1,0 +1,26 @@
+url = "/sifaris-et"
+layout = "ceylanur-layout"
+title = "Sifariş"
+
+[viewBag]
+localeUrl[ru] = "/zakazat"
+localeUrl[en-gb] = "/order"
+localeTitle[ru] = "Заказать"
+localeTitle[en-gb] = "Order"
+
+[order_form]
+==
+{% put pages_css %}
+    <link rel="stylesheet" href="{{'assets/css/form.css' | theme}}" />
+{% endput %}
+
+
+    {% component 'order_form' %}
+
+
+
+   
+
+{% put pages_scripts %}
+   <script src="{{'assets/js/order.js' | theme}}"></script>
+{% endput %}

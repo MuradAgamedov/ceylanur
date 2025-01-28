@@ -1,0 +1,55 @@
+columns:
+    id:
+        label: id
+        type: number
+        sortable: true
+    name:
+        label: Имя
+        type: text
+        searchable: true
+        sortable: true
+    surname:
+        label: Фамилия
+        type: text
+        searchable: true
+        sortable: true
+    client_email:
+        label: 'Электронная почта'
+        type: text
+        searchable: true
+        sortable: true
+    tel:
+        label: Телефон
+        type: text
+        searchable: true
+        sortable: true
+    genre:
+        label: Жанр
+        type: text
+        searchable: true
+        sortable: true
+    technique:
+        label: Техника
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: Сообщение
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: created_at
+        type: datetime
+        searchable: true
+        sortable: true
+    updated_at:
+        label: updated_at
+        type: datetime
+        searchable: true
+        sortable: true
+    deleted_at:
+        label: deleted_at
+        type: datetime
+        searchable: true
+        sortable: true

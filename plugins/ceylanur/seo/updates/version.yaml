@@ -1,0 +1,68 @@
+v1.0.1:
+    - 'Initialize plugin'
+v1.0.2:
+    - 'Created table ceylanur_seo_links'
+    - builder_table_create_ceylanur_seo_links.php
+v1.0.3:
+    - 'Updated table ceylanur_seo_links'
+    - builder_table_update_ceylanur_seo_links.php
+v1.0.4:
+    - 'Updated table ceylanur_seo_links'
+    - builder_table_update_ceylanur_seo_links_2.php
+v1.0.5:
+    - 'Created table ceylanur_seo_scripts'
+    - builder_table_create_ceylanur_seo_scripts.php
+v1.0.6:
+    - 'Updated table ceylanur_seo_scripts'
+    - builder_table_update_ceylanur_seo_scripts.php
+v1.0.7:
+    - 'Drop table ceylanur_seo_scripts'
+    - builder_table_delete_ceylanur_seo_scripts.php
+v1.0.8:
+    - 'Created table ceylanur_seo_scripts'
+    - builder_table_create_ceylanur_seo_scripts_2.php
+v1.0.9:
+    - 'Updated table ceylanur_seo_scripts'
+    - builder_table_update_ceylanur_seo_scripts_2.php
+v1.0.10:
+    - 'Updated table ceylanur_seo_links'
+    - builder_table_update_ceylanur_seo_links_3.php
+v1.0.11:
+    - 'Updated table ceylanur_seo_scripts'
+    - builder_table_update_ceylanur_seo_scripts_3.php
+v1.0.12:
+    - 'Created table ceylanur_seo_home_page'
+    - builder_table_create_ceylanur_seo_home_page.php
+v1.0.13:
+    - 'Updated table ceylanur_seo_home_page'
+    - builder_table_update_ceylanur_seo_home_page.php
+v1.0.14:
+    - 'Updated table ceylanur_seo_home_page'
+    - builder_table_update_ceylanur_seo_home_page_2.php
+v1.0.15:
+    - 'Created table ceylanur_seo_about_page'
+    - builder_table_create_ceylanur_seo_about_page.php
+v1.0.16:
+    - 'Created table ceylanur_seo_services_page'
+    - builder_table_create_ceylanur_seo_services_page.php
+v1.0.17:
+    - 'Created table ceylanur_seo_cpntact_page'
+    - builder_table_create_ceylanur_seo_cpntact_page.php
+v1.0.18:
+    - 'Updated table ceylanur_seo_cpntact_page'
+    - builder_table_update_ceylanur_seo_contact_page.php
+v1.0.19:
+    - 'Created table ceylanur_seo_copywrite_page'
+    - builder_table_create_ceylanur_seo_copywrite_page.php
+v1.0.20:
+    - 'Created table ceylanur_seo_gallary_page'
+    - builder_table_create_ceylanur_seo_gallary_page.php
+v1.0.21:
+    - 'Updated table ceylanur_seo_gallary_page'
+    - builder_table_update_ceylanur_seo_gallary_page.php
+v1.0.22:
+    - 'Updated table ceylanur_seo_gallary_page'
+    - builder_table_update_ceylanur_seo_gallary_page_2.php
+v1.0.23:
+    - 'Created table ceylanur_seo_order_form'
+    - builder_table_create_ceylanur_seo_order_form.php

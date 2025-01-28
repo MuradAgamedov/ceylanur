@@ -1,0 +1,123 @@
+.about__part {
+    margin-top: 11.1rem;
+    gap: 6.2rem;
+    font-size: 1.6rem;
+    line-height: 26px;
+    text-align: start;
+}
+
+.about__part:first-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem 6.2rem;
+}
+
+.about__part>div:last-child {
+    grid-column: 1/-1;
+}
+
+.about__part-img {
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+
+.about__part-detail {
+    max-width: 58.8rem;
+    flex: 2;
+}
+
+.about__part-detail h1 {
+    display: flex;
+    flex-direction: column;
+    font-weight: normal;
+}
+
+.about__part-detail>h1>span {
+    align-self: flex-end;
+}
+
+.about__part-detail>div {
+    margin-top: 5.1rem;
+}
+
+.abp2>* {
+    flex: 1;
+}
+
+.about__part-detail>a {
+    margin-top: 17.1rem;
+}
+
+/* about more btn */
+
+.about_load_more {
+    display: none;
+    margin-top: 10rem;
+    column-gap: 2.5rem;
+    width: 100%;
+}
+
+.about_load_more>button {
+    font-size: 1.6rem;
+    column-gap: 3rem;
+    font-family: var(--main-font);
+}
+
+.more_line {
+    background-color: var(--color-main);
+    height: 0.1rem;
+    flex: 1;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1024px) {
+    .about__part:first-child {
+        gap: 3.2rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .about__part {
+        margin-top: 6.5rem;
+        gap: 4rem;
+    }
+
+    .about__part-detail>p {
+        font-size: 1.8rem;
+        margin-top: 4rem;
+    }
+
+    .about__part-detail>button {
+        margin-top: 7rem;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .about__part:first-child {
+        display: block;
+    }
+
+    .about__part-detail {
+        max-width: max-content;
+        margin-top: 8.1rem;
+    }
+
+    .about__part-detail>div {
+        margin-top: 3.7rem;
+    }
+
+    .abp2 {
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about__part:first-child > div:last-child {
+        display: none;
+    }
+
+    .about_load_more {
+        display: flex;
+    }
+}

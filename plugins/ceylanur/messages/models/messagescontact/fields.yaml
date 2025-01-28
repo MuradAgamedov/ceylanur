@@ -1,0 +1,14 @@
+fields:
+    name:
+        label: Имя
+        span: auto
+        type: text
+    client_email:
+        label: 'Электронная почта'
+        span: auto
+        type: text
+    mess:
+        label: Сообщения
+        size: huge
+        span: full
+        type: textarea

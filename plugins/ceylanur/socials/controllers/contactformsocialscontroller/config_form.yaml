@@ -1,0 +1,10 @@
+name: ContactFormSocialsController
+form: $/ceylanur/socials/models/sontactformsocials/fields.yaml
+modelClass: Ceylanur\Socials\Models\SontactFormSocials
+defaultRedirect: ceylanur/socials/contactformsocialscontroller
+create:
+    redirect: 'ceylanur/socials/contactformsocialscontroller/update/:id'
+    redirectClose: ceylanur/socials/contactformsocialscontroller
+update:
+    redirect: ceylanur/socials/contactformsocialscontroller
+    redirectClose: ceylanur/socials/contactformsocialscontroller

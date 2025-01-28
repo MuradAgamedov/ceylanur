@@ -1,0 +1,10 @@
+name: HomePageSeoController
+form: $/ceylanur/seo/models/homepageseo/fields.yaml
+modelClass: Ceylanur\Seo\Models\HomePageSeo
+defaultRedirect: ceylanur/seo/homepageseocontroller
+create:
+    redirect: 'ceylanur/seo/homepageseocontroller/update/:id'
+    redirectClose: ceylanur/seo/homepageseocontroller
+update:
+    redirect: ceylanur/seo/homepageseocontroller
+    redirectClose: ceylanur/seo/homepageseocontroller

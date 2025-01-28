@@ -1,0 +1,16 @@
+fields:
+    title:
+        label: Заголовок
+        span: full
+        type: text
+    text:
+        label: Текст
+        size: huge
+        span: full
+        required: 1
+        type: richeditor
+    status:
+        label: 'Видна на странице'
+        span: auto
+        required: 0
+        type: checkbox

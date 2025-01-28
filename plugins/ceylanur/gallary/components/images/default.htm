@@ -1,0 +1,108 @@
+{% put page_seo_links %}
+{{seo.links | raw}}
+<meta name="keywords" content="{{seo.meta_keywords}}">
+<meta name="description" content="{{seo.meta_description}}">
+<title>{{seo.meta_title}}</title>
+{% endput %}
+
+<section class="galery">
+    <div class="container">
+        <div  class="galery__wrapper reveal_first">
+            <div class="galery__filter">
+                <div class="galery__filter-part">
+                    <div class="flex align-items-center">
+                        {{'galarry.technique' | _}}
+                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="5.0625" y="10.3047" width="10.2979" height="0.853139" rx="0.42657" transform="rotate(-90 5.0625 10.3047)" fill="#302925" />
+                            <rect x="11" y="6" width="11" height="1" rx="0.5" transform="rotate(180 11 6)" fill="#302925" />
+                         </svg>
+                    </div>
+                    <ul class="flex flex-direct-col">
+                        {% for technique in techniques %}
+                        <li>
+                            <label class="flex align-items-center" for="{{technique.title}}">
+                          <input class="technique_input" data-id="{{technique.id}}" type="checkbox" name="" id="{{technique.title}}" />{{technique.title}}
+                        </label>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="galery__filter-part">
+                    <div class="flex align-items-center">
+                        {{'galarry.genre' | _}}
+                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="5.0625" y="10.3047" width="10.2979" height="0.853139" rx="0.42657" transform="rotate(-90 5.0625 10.3047)" fill="#302925" />
+                          <rect x="11" y="6" width="11" height="1" rx="0.5" transform="rotate(180 11 6)" fill="#302925" />
+                         </svg>
+                    </div>
+                    <ul class="flex flex-direct-col">
+                        {% for genre in genres %}
+                        <li>
+                            <label class="flex align-items-center" for="{{genre.title}}">
+                          <input class="genre_input" data-id="{{genre.id}}" type="checkbox" name="" id="{{genre.title}}" />{{genre.title}}
+                        </label>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="galery__filter-part active">
+                    <div class="flex align-items-center">
+                        {{'image.status' | _}}
+                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="5.0625" y="10.3047" width="10.2979" height="0.853139" rx="0.42657" transform="rotate(-90 5.0625 10.3047)" fill="#302925" />
+                            <rect x="11" y="6" width="11" height="1" rx="0.5" transform="rotate(180 11 6)" fill="#302925" />
+                        </svg>
+                    </div>
+                    <ul class="flex flex-direct-col">
+                        <li>
+                            <label class="flex align-items-center" for="Yağlı boyalar">
+                      <input class="input_availablity" data-id="1" type="checkbox" name="" id="" />{{'image.sold' | _}}
+                    </label>
+                        </li>
+                        <li>
+                            <label class="flex align-items-center" for="Yağlı boyalar">
+                      <input class="input_availablity" data-id="2" type="checkbox" name="" id="" />{{'image.available' | _}}
+                    </label>
+                        </li>
+                        
+                         <li>
+                            <label class="flex align-items-center" for="Yağlı boyalar">
+                      <input class="input_availablity" data-id="3" type="checkbox" name="" id="" />{{'image.dont_for_sale' | _}}
+                    </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div data-notFound="{{'data.notfound' | _}}" data-sold="{{'image.sold' | _}}" data-url="{{url}}" data-available="{{'image.available' | _}}" data-notForSale="{{'image.dont_for_sale' | _}}"
+                class="galery__grid">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="gallery_load_more flex align-items-center">
+        <div class="more_line left_line"></div>
+        <button  data-url="/api/images?genre=&technique=&availablity=" class="flex-center" data-page="1">
+            <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.43707 14.9141L-0.000862122 5.35621L6.467 10.0292L12.875 5.35621L6.43707 14.9141Z" fill="#9DBBC9" />
+               <path d="M6.73633 6L2.73633 -4.76837e-07L6.75493 2.93349L10.7363 -4.76837e-07L6.73633 6Z" fill="#9DBBC9" />
+            </svg> 
+            {{'gallary.load_more' | _}} 
+            <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.43707 14.9141L-0.000862122 5.35621L6.467 10.0292L12.875 5.35621L6.43707 14.9141Z" fill="#9DBBC9" />
+               <path d="M6.73633 6L2.73633 -4.76837e-07L6.75493 2.93349L10.7363 -4.76837e-07L6.73633 6Z" fill="#9DBBC9" />
+            </svg>
+        </button>
+        <div class="more_line right_line"></div>
+    </div>
+</section>
+
+<!-- <script src="https://unpkg.com/imagesloaded@latest/imagesloaded.pkgd.min.js"></script> -->
+
+
+{% put page_seo_scripts %}
+{{seo.scripts | raw}}
+{% endput %}

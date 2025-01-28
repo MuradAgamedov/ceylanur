@@ -1,0 +1,10 @@
+name: SeoHeadLinksController
+form: $/ceylanur/seo/models/headlinks/fields.yaml
+modelClass: Ceylanur\Seo\Models\HeadLinks
+defaultRedirect: ceylanur/seo/seoheadlinkscontroller
+create:
+    redirect: 'ceylanur/seo/seoheadlinkscontroller/update/:id'
+    redirectClose: ceylanur/seo/seoheadlinkscontroller
+update:
+    redirect: ceylanur/seo/seoheadlinkscontroller
+    redirectClose: ceylanur/seo/seoheadlinkscontroller

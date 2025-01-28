@@ -1,0 +1,10 @@
+name: HomePageFifthDescriptionController
+form: $/ceylanur/modules/models/homepagefifthdescription/fields.yaml
+modelClass: Ceylanur\Modules\Models\HomePageFifthDescription
+defaultRedirect: ceylanur/modules/homepagefifthdescriptioncontroller
+create:
+    redirect: 'ceylanur/modules/homepagefifthdescriptioncontroller/update/:id'
+    redirectClose: ceylanur/modules/homepagefifthdescriptioncontroller
+update:
+    redirect: ceylanur/modules/homepagefifthdescriptioncontroller
+    redirectClose: ceylanur/modules/homepagefifthdescriptioncontroller

@@ -1,0 +1,23 @@
+v1.0.1:
+    - 'Initialize plugin'
+v1.0.2:
+    - 'Created table ceylanur_services_main'
+    - builder_table_create_ceylanur_services_main.php
+v1.0.3:
+    - 'Updated table ceylanur_services_main'
+    - builder_table_update_ceylanur_services_main.php
+v1.0.4:
+    - 'Updated table ceylanur_services_main'
+    - builder_table_update_ceylanur_services_main_2.php
+v1.0.5:
+    - 'Updated table ceylanur_services_main'
+    - builder_table_update_ceylanur_services_main_3.php
+v1.0.6:
+    - 'Updated table ceylanur_services_main'
+    - builder_table_update_ceylanur_services_main_4.php
+v1.0.7:
+    - 'Updated table ceylanur_services_main'
+    - builder_table_update_ceylanur_services_main_5.php
+v1.0.8:
+    - 'Updated table ceylanur_services_main'
+    - builder_table_update_ceylanur_services_main_6.php

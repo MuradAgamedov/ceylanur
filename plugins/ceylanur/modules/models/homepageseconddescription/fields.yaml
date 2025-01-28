@@ -1,0 +1,33 @@
+fields:
+    image:
+        label: Изображение
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    image_title:
+        label: 'Заголовок Изображения'
+        span: auto
+        required: 1
+        type: text
+    image_short_description:
+        label: 'Короткое описание изображения'
+        size: small
+        span: full
+        required: 1
+        type: richeditor
+    title:
+        label: 'Заголовок первой секции'
+        span: full
+        required: 1
+        type: text
+    text:
+        label: 'Текст первой секции'
+        size: large
+        span: full
+        required: 1
+        type: richeditor

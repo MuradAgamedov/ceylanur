@@ -1,0 +1,24 @@
+url = "/"
+layout = "ceylanur-layout"
+title = "Ana səhifə"
+
+[viewBag]
+localeUrl[ru] = "/"
+localeUrl[en-gb] = "/"
+localeTitle[ru] = "Главная"
+localeTitle[en-gb] = "Home page"
+
+[home_page_sections]
+
+[contact_form]
+==
+{% put pages_css %}
+    <link rel="stylesheet" href="{{'assets/css/home.css' | theme}}" />
+{% endput %}
+
+{% component 'home_page_sections' %}
+{% partial 'goTopButton' %}
+{% put pages_scripts %}
+   <script src="{{'assets/js/contact.js' | theme}}"></script>
+
+{% endput %}

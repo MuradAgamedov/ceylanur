@@ -1,0 +1,10 @@
+name: HomePageSecondDescriptionController
+form: $/ceylanur/modules/models/homepageseconddescription/fields.yaml
+modelClass: Ceylanur\Modules\Models\HomePageSecondDescription
+defaultRedirect: ceylanur/modules/homepageseconddescriptioncontroller
+create:
+    redirect: 'ceylanur/modules/homepageseconddescriptioncontroller/update/:id'
+    redirectClose: ceylanur/modules/homepageseconddescriptioncontroller
+update:
+    redirect: ceylanur/modules/homepageseconddescriptioncontroller
+    redirectClose: ceylanur/modules/homepageseconddescriptioncontroller

@@ -1,0 +1,11 @@
+plugin:
+    name: 'ceylanur.services::lang.plugin.name'
+    description: 'ceylanur.services::lang.plugin.description'
+    author: ceylanur
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Услуги
+        url: ceylanur/services/servicescontroller
+        icon: icon-list-alt

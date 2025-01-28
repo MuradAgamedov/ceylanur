@@ -1,0 +1,104 @@
+ <footer class="footer">
+      <div class="container">
+        <nav class="footer__nav">
+          <ul class="footer__navmenu flex">
+            <li>
+              <h4>{{'footer_top_titles.links' | _}}</h4>
+              <ul class="flex">
+                <li>
+                  <a href="{{'gallery' | page}}" aria-label="{{'footer_top_links.gallary' | _}}" title="{{'footer_top_links.gallary' | _}}">{{'footer_top_links.gallary' | _}}</a>
+                </li>
+                <li>
+                  <a href="{{'about' | page}}" aria-label="{{'footer_top_links.about' | _}}" title="{{'footer_top_links.about' | _}}">{{'footer_top_links.about' | _}}</a>
+                </li>
+                <li>
+                  <a href="{{'contact' | page}}" aria-label="{{'footer_top_links.contact' | _}}" title="{{'footer_top_links.contact' | _}}">{{'footer_top_links.contact' | _}}</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h4>{{'footer_top_titles.services' | _}}</h4>
+              <ul class="flex">
+                <li><a href="{{ 'services'|page }}" aria-label="{{'footer_top_links.paint_lessons' | _}}" title="{{'footer_top_links.paint_lessons' | _}}">{{'footer_top_links.paint_lessons' | _}}</a></li>
+                <li><a href="{{ 'orderform'|page }}" aria-label="{{'footer_top_links.order_image' | _}}" title="{{'footer_top_links.order_image' | _}}">{{'footer_top_links.order_image' | _}}</a></li>
+              </ul>
+            </li>
+            <li>
+              <h4>{{'footer_top_titles.legal' | _}}</h4>
+              <ul class="flex">
+                <li>
+                  <a href="{{'copywrite' | page}}" aria-label="{{'footer_top_links.copywrite' | _}}" title="{{'footer_top_links.copywrite' | _}}">
+                    {{'footer_top_links.copywrite' | _}}
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-wrapper flex align-items-center">
+            <div>{{'footer.you_can_follow_and_contact_us_here' | _}}</div>
+            <div class="socials flex justify-content-center">
+              <ul class="flex align-items-center">
+                    {% if  footerSocials.facebook_seen %}
+                      <li>
+                        <a href="{{facebook_link}}" title="facebook" aria-label="facebook" target="_blank">
+                            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                        </a>
+                       </li>
+                    {% endif %}
+                    {% if footerSocials.tiktok_seen %}
+                       <li>
+                            <a href="{{tiktok_link}}" title="tiktok" aria-label="tiktok" target="_blank">
+                                <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    {% endif %}
+                    {% if  footerSocials.telegram_seen %}
+                        <li>
+                            <a href="{{telegram_link}}" title="telegram" aria-label="telegram" target="_blank">
+                                <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    {% endif %}
+                    {% if  footerSocials.youtube_seen %}
+                        <li>
+                            <a href="{{youtube_link}}" title="youtube" aria-label="youtube" target="_blank">
+                                <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    {% endif %}
+                    {% if  footerSocials.instragram_seen %}
+                        <li>
+                            <a href="{{instagram_link}}" title="instagram" aria-label="instagram" target="_blank">
+                                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    {% endif %}
+                    {% if footerSocials.twitter_seen %}
+                        <li>
+                            <a href="{{twitter_link}}" title="twitter" aria-label="twitter" target="_blank">
+                                <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    {% endif %}
+
+                    {% if  footerSocials.whatsapp_seen %}
+                        <li  title="" aria-label="">
+                            <a title="whatsapp" aria-label="whatsapp" href="https://wa.me/{{whatsapp_number}}" target="_blank">
+                               <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    {% endif %}
+
+              </ul>
+            </div>
+            <div class="footer__copy">
+              {{copywrite_text | raw}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>

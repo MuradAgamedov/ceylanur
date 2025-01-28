@@ -1,0 +1,16 @@
+fields:
+    title_for_search:
+        label: 'Заголовок для поиска'
+        span: full
+        required: 1
+        type: text
+    script:
+        label: 'Вставьте код'
+        size: large
+        span: full
+        type: textarea
+    status:
+        label: 'Добавить на страницу'
+        span: auto
+        required: 0
+        type: checkbox

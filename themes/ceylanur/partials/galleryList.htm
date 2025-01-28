@@ -1,0 +1,31 @@
+<div id="galleryContainer">
+    {% for image in images %}
+    <figure class="flex flex-direct-col align-items-center">
+        <div>
+            <a class="galery__img {% if image.style == '2' %} gi1 {% endif %}"
+               href="{{ image.url }}"
+               aria-label="{{ image.title }}"
+               title="{{ image.title }}">
+                <picture>
+                    <img src="{{ image.image.path }}" alt="{{ image.title }}" width="" height="" />
+                    <span class="status flex-center">{{ image.availability }}</span>
+                </picture>
+            </a>
+        </div>
+        <div class="picture__name flex align-items-center">
+            <span>{{ image.title }}</span>
+            <span>{{ image.translated_short_description }}</span>
+        </div>
+    </figure>
+    {% else %}
+    <p>Şəkil tapılmadı.</p>
+    {% endfor %}
+</div>
+
+{% if nextPage %}
+<div class="gallery_load_more">
+    <button data-request="onLoadMore" data-request-data="page: {{ nextPage }}" data-request-update="'#galleryContainer': '@galleryList'">
+        Daha çox yüklə
+    </button>
+</div>
+{% endif %}

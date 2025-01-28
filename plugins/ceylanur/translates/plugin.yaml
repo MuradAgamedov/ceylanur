@@ -1,0 +1,11 @@
+plugin:
+    name: 'ceylanur.translates::lang.plugin.name'
+    description: 'ceylanur.translates::lang.plugin.description'
+    author: ceylanur
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Переводы
+        url: rainlab/translate/messages
+        icon: icon-language

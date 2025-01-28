@@ -1,0 +1,21 @@
+url = "/elaqe"
+layout = "ceylanur-layout"
+title = "Əlaqə"
+
+[viewBag]
+localeUrl[ru] = "/kontakt"
+localeUrl[en-gb] = "/contact"
+localeTitle[ru] = "Контакт"
+localeTitle[en-gb] = "Contact"
+
+[contact_form]
+==
+{% put pages_css %}
+
+{% endput %}
+{% component 'contact_form' %}
+{% partial 'contact_form_seo_links' %}
+{% partial 'contact_form_seo_scripts' %}
+{% put pages_scripts %}
+   <script src="{{'assets/js/contact.js' | theme}}"></script>
+{% endput %}

@@ -1,0 +1,27 @@
+url = "/haqqimda"
+layout = "ceylanur-layout"
+title = "Haqqımda"
+
+[viewBag]
+localeUrl[ru] = "/obo-mne"
+localeUrl[en-gb] = "/about"
+localeTitle[ru] = "Обо мне"
+localeTitle[en-gb] = "About"
+
+[about]
+==
+{% put pages_css %}
+    <link rel="stylesheet" href="{{'assets/css/about.css' | theme}}" />
+{% endput %}
+    {% component 'about' %}
+{% put pages_scripts %}
+    {# <script>
+    const paragraphs = document.querySelectorAll('.about__part p')
+    paragraphs.forEach(p => {
+           if(p.innerHTML.trim() === '') {
+            p.remove()
+           }
+    })
+    </script> #}
+    <script src="{{'assets/js/about.js' | theme}}"></script>
+{% endput %}

@@ -1,0 +1,25 @@
+columns:
+    id:
+        label: id
+        type: number
+    facebook_seen:
+        label: facebook_seen
+        type: number
+    telegram_seen:
+        label: telegram_seen
+        type: number
+    tiktok_seen:
+        label: tiktok_seen
+        type: number
+    youtube_seen:
+        label: youtube_seen
+        type: number
+    whatsapp_seen:
+        label: whatsapp_seen
+        type: number
+    instragram_seen:
+        label: instragram_seen
+        type: number
+    twitter_seen:
+        label: twitter_seen
+        type: number

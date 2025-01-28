@@ -1,0 +1,11 @@
+plugin:
+    name: 'ceylanur.settings::lang.plugin.name'
+    description: 'ceylanur.settings::lang.plugin.description'
+    author: ceylanur
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Настройки
+        url: ceylanur/settings/settingscontroller/update/1
+        icon: icon-cogs

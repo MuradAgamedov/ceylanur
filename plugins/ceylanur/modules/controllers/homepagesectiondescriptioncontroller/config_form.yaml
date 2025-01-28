@@ -1,0 +1,10 @@
+name: HomePageSectionDescriptionController
+form: $/ceylanur/modules/models/homepagefourthdescription/fields.yaml
+modelClass: Ceylanur\Modules\Models\HomePageFourthDescription
+defaultRedirect: ceylanur/modules/homepagesectiondescriptioncontroller
+create:
+    redirect: 'ceylanur/modules/homepagesectiondescriptioncontroller/update/:id'
+    redirectClose: ceylanur/modules/homepagesectiondescriptioncontroller
+update:
+    redirect: ceylanur/modules/homepagesectiondescriptioncontroller
+    redirectClose: ceylanur/modules/homepagesectiondescriptioncontroller

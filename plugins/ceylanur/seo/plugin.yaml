@@ -1,0 +1,48 @@
+plugin:
+    name: 'ceylanur.seo::lang.plugin.name'
+    description: 'ceylanur.seo::lang.plugin.description'
+    author: ceylanur
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: SEO
+        url: /
+        icon: icon-cubes
+        sideMenu:
+            side-menu-item:
+                label: 'All site head links'
+                url: ceylanur/seo/seoheadlinkscontroller
+                icon: icon-cube
+            side-menu-item2:
+                label: 'All site seo scripts'
+                url: ceylanur/seo/seoscriptscontroller
+                icon: icon-cube
+            side-menu-item3:
+                label: 'Home Page Seo'
+                url: ceylanur/seo/homepageseocontroller/update/1
+                icon: icon-home
+            side-menu-item4:
+                label: 'About page seo'
+                url: ceylanur/seo/aboutpageseocontroller/update/1
+                icon: icon-user-md
+            side-menu-item5:
+                label: 'Services page'
+                url: ceylanur/seo/servicespagecontroller/update/1
+                icon: icon-briefcase
+            side-menu-item6:
+                label: 'Contact page'
+                url: ceylanur/seo/contactpageseocontroller/update/1
+                icon: icon-phone
+            side-menu-item7:
+                label: 'Copyright page'
+                url: ceylanur/seo/copyrightpageseocontroller/update/1
+                icon: icon-copyright
+            side-menu-item8:
+                label: 'Gallery page'
+                url: /ceylanur/seo/gallarypageseocontroller/update/1
+                icon: icon-image
+            side-menu-item9:
+                label: 'Contact form page'
+                url: ceylanur/seo/contactformpageseodescriptioncontroller/update/1
+                icon: icon-sitemap

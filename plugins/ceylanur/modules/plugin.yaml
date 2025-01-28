@@ -1,0 +1,32 @@
+plugin:
+    name: 'ceylanur.modules::lang.plugin.name'
+    description: 'ceylanur.modules::lang.plugin.description'
+    author: ceylanur
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Секции главной страницы'
+        url: /
+        icon: icon-sitemap
+        sideMenu:
+            side-menu-item:
+                label: 'Первая секция'
+                url: ceylanur/modules/homepagefirstdescriptioncontroller/update/1
+                icon: icon-square
+            side-menu-item2:
+                label: 'Вторая секция'
+                url: ceylanur/modules/homepageseconddescriptioncontroller/update/1
+                icon: icon-square
+            side-menu-item3:
+                label: 'Третья секция'
+                url: ceylanur/modules/homepagethirddescriptioncontroller/update/1
+                icon: icon-square
+            side-menu-item4:
+                label: 'Четвертая секция'
+                url: ceylanur/modules/homepagesectiondescriptioncontroller/update/1
+                icon: icon-square
+            side-menu-item5:
+                label: 'Пятая секция'
+                url: ceylanur/modules/homepagefifthdescriptioncontroller/update/1
+                icon: icon-square

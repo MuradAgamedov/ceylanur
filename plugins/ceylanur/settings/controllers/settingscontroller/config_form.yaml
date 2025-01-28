@@ -1,0 +1,10 @@
+name: SettingsController
+form: $/ceylanur/settings/models/settings/fields.yaml
+modelClass: Ceylanur\Settings\Models\Settings
+defaultRedirect: ceylanur/settings/settingscontroller
+create:
+    redirect: 'ceylanur/settings/settingscontroller/update/:id'
+    redirectClose: ceylanur/settings/settingscontroller
+update:
+    redirect: ceylanur/settings/settingscontroller
+    redirectClose: ceylanur/settings/settingscontroller

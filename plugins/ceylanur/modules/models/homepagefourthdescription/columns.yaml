@@ -1,0 +1,22 @@
+columns:
+    id:
+        label: id
+        type: number
+    first_video_title:
+        label: 'Заголовок первого видео'
+        type: text
+    first_video_short_description:
+        label: 'Короткое описание первой видео'
+        type: text
+    second_video_title:
+        label: 'Заголовок второго видео'
+        type: text
+    second_video_short_description:
+        label: 'Короткое описание видео'
+        type: text
+    third_vido_title:
+        label: 'Заголовок третого видео'
+        type: text
+    third_video_short_description:
+        label: 'Короткое описание третого видео'
+        type: text

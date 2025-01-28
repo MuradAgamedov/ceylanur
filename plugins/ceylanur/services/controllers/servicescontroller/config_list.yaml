@@ -1,0 +1,14 @@
+list: $/ceylanur/services/models/services/columns.yaml
+modelClass: Ceylanur\Services\Models\Services
+title: ServicesController
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'ceylanur/services/servicescontroller/update/:id'
+structure:
+    reorder: true

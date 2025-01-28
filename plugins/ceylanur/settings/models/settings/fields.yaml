@@ -1,0 +1,93 @@
+fields:
+    logo:
+        label: 'Лого сайта'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    email:
+        label: 'Электронная почта'
+        span: auto
+        required: 1
+        type: text
+    favicon:
+        label: Фавиконка
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    tiktok_link:
+        label: 'Tiktok link'
+        span: auto
+        required: 1
+        type: text
+    facebook_link:
+        label: 'Facebook link'
+        span: auto
+        required: 1
+        type: text
+    twitter_link:
+        label: 'Twitter link'
+        span: auto
+        required: 1
+        type: text
+    telegram_link:
+        label: 'Telegram link'
+        span: auto
+        required: 1
+        type: text
+    youtube_link:
+        label: 'Youtube link'
+        span: auto
+        required: 1
+        type: text
+    whatsapp_number:
+        label: 'Whatsapp number'
+        span: auto
+        required: 1
+        type: text
+    instagram_link:
+        label: 'Instagram link'
+        span: auto
+        required: 1
+        type: text
+    copywrite_text:
+        label: 'Текст копирайта'
+        size: small
+        span: full
+        required: 1
+        type: richeditor
+    success_form_image_first:
+        label: 'Фото на первом модальном окне'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    success_form_image_second:
+        label: 'Фото на втором модальном окне'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    copyright_modal_image:
+        label: 'Фото на модальном окне авторских прав'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload

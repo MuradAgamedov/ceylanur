@@ -1,0 +1,16 @@
+fields:
+    title_for_search:
+        label: 'Загаловок для поиска по базе'
+        span: full
+        required: 1
+        type: text
+    link:
+        label: 'Вставьте код'
+        size: large
+        span: full
+        type: textarea
+    status:
+        label: 'Добавить на страницу'
+        span: auto
+        required: 0
+        type: checkbox

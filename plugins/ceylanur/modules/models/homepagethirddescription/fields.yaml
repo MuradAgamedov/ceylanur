@@ -1,0 +1,32 @@
+fields:
+    section_title:
+        label: 'Заголовок - о нас'
+        span: full
+        required: 1
+        type: text
+    section_subtitle_text:
+        label: 'Заголовок  подте́кста'
+        size: small
+        span: full
+        required: 1
+        type: richeditor
+    video:
+        label: Видео
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    title:
+        label: 'Заголовок видео'
+        span: auto
+        required: 1
+        type: text
+    text:
+        label: 'Текст видео'
+        size: large
+        span: full
+        type: richeditor

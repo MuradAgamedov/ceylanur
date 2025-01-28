@@ -1,0 +1,12 @@
+list: $/ceylanur/socials/models/footersocials/columns.yaml
+modelClass: Ceylanur\Socials\Models\FooterSocials
+title: FooterSocialsController
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'ceylanur/socials/footersocialscontroller/update/:id'

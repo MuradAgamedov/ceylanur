@@ -1,0 +1,19 @@
+url = "/copirights_attention"
+title = "copirights_attention"
+
+[CopirghtAttention]
+==
+<link rel="stylesheet" href="{{'assets/css/home.css' | theme}}" />
+
+{% component 'CopirghtAttention' %}
+ <script>
+    document.querySelector('.copyrights_checkbox').addEventListener("change", () => {
+        if (document.querySelector('.copyrights_checkbox').checked) {
+            window.location.href = "/copyright-attestation";
+        }
+    });
+</script>    
+
+
+
+   <script src="{{'assets/js/contact.js' | theme}}"></script>

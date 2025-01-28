@@ -1,0 +1,10 @@
+name: ServicesController
+form: $/ceylanur/services/models/services/fields.yaml
+modelClass: Ceylanur\Services\Models\Services
+defaultRedirect: ceylanur/services/servicescontroller
+create:
+    redirect: 'ceylanur/services/servicescontroller/update/:id'
+    redirectClose: ceylanur/services/servicescontroller
+update:
+    redirect: ceylanur/services/servicescontroller
+    redirectClose: ceylanur/services/servicescontroller

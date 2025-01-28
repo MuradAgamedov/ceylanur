@@ -1,0 +1,14 @@
+list: $/ceylanur/messages/models/messagesorderservice/columns.yaml
+modelClass: Ceylanur\Messages\Models\MessagesOrderService
+title: MessagesOrderServiceController
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'ceylanur/messages/messagesorderservicecontroller/update/:id'
+structure:
+    reorder: true

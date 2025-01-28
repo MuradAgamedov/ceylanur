@@ -1,0 +1,11 @@
+scopes:
+    genre:
+        label: Жанр
+        modelClass: Ceylanur\Gallary\Models\Genres
+        conditions: genre_id in (:filtered)
+        nameFrom: title
+    technique:
+        label: Техника
+        modelClass: Ceylanur\Gallary\Models\Techniques
+        conditions: technique_id in (:filtered)
+        nameFrom: title

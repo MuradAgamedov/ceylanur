@@ -1,0 +1,10 @@
+name: MessagesOrderServiceController
+form: $/ceylanur/messages/models/messagesorderservice/fields.yaml
+modelClass: Ceylanur\Messages\Models\MessagesOrderService
+defaultRedirect: ceylanur/messages/messagesorderservicecontroller
+create:
+    redirect: 'ceylanur/messages/messagesorderservicecontroller/update/:id'
+    redirectClose: ceylanur/messages/messagesorderservicecontroller
+update:
+    redirect: ceylanur/messages/messagesorderservicecontroller
+    redirectClose: ceylanur/messages/messagesorderservicecontroller

@@ -1,0 +1,10 @@
+name: AboutController
+form: $/ceylanur/about/models/about/fields.yaml
+modelClass: Ceylanur\About\Models\About
+defaultRedirect: ceylanur/about/aboutcontroller
+create:
+    redirect: 'ceylanur/about/aboutcontroller/update/:id'
+    redirectClose: ceylanur/about/aboutcontroller
+update:
+    redirect: ceylanur/about/aboutcontroller
+    redirectClose: ceylanur/about/aboutcontroller

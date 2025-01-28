@@ -1,0 +1,10 @@
+name: AboutPageSeoController
+form: $/ceylanur/seo/models/aboutpageseo/fields.yaml
+modelClass: Ceylanur\Seo\Models\AboutPageSeo
+defaultRedirect: ceylanur/seo/aboutpageseocontroller
+create:
+    redirect: 'ceylanur/seo/aboutpageseocontroller/update/:id'
+    redirectClose: ceylanur/seo/aboutpageseocontroller
+update:
+    redirect: ceylanur/seo/aboutpageseocontroller
+    redirectClose: ceylanur/seo/aboutpageseocontroller

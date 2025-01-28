@@ -1,0 +1,11 @@
+plugin:
+    name: 'ceylanur.copyrightatestation::lang.plugin.name'
+    description: 'ceylanur.copyrightatestation::lang.plugin.description'
+    author: ceylanur
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Заверение авторских прав'
+        url: ceylanur/copyrightatestation/copirightatestationcontroller
+        icon: icon-exclamation-circle

@@ -1,0 +1,11 @@
+plugin:
+    name: 'ceylanur.about::lang.plugin.name'
+    description: 'ceylanur.about::lang.plugin.description'
+    author: ceylanur
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Обо мне'
+        url: ceylanur/about/aboutcontroller/update/1
+        icon: icon-child

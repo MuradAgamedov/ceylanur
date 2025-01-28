@@ -1,0 +1,13 @@
+columns:
+    id:
+        label: id
+        type: number
+    meta_title:
+        label: meta_title
+        type: text
+    meta_keywords:
+        label: meta_keywords
+        type: text
+    meta_description:
+        label: meta_description
+        type: text

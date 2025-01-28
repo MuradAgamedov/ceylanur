@@ -1,0 +1,124 @@
+<section class="appeal">
+    <div class="container">
+        <h2>{{'image_order.title'|_}}</h2>
+        <form action="" class="form order_service_form">
+            <div class="form__top flex">
+                <div class="form__top-part flex flex-direct-col">
+                    <label id="order_label">
+                        <input
+                            type="text"
+                            name="name"
+                            id=""
+                            placeholder="{{'order_form.name' | _}}:"
+                            aria-label="{{'order_form.name' | _}}"
+                        />
+                        <span></span>
+                    </label>
+                    <label id="order_label">
+                        <input
+                            type="tel"
+                            name="tel"
+                            id=""
+                            placeholder="{{'order_form.tel' | _}}:"
+                            aria-label="{{'order_form.tel' | _}}"
+                        />
+                        <span></span>
+                    </label>
+                </div>
+
+                <div class="form__top-part flex flex-direct-col">
+                    <label id="order_label">
+                        <input
+                            type="text"
+                            name="surname"
+                            id=""
+                            placeholder="{{'order_form.surname' | _}}:"
+                            aria-label=""
+                        />
+                        <span></span>
+                    </label>
+                    <label for="Janr" id="order_label">
+                        <div>
+                            <select
+                                class="select"
+                                name="service"
+                                id=""
+                                aria-placeholder="{{'order_form.genre' | _}}"
+                                aria-label="{{'order_form.genre' | _}}"
+                            >
+                                {% for service in services %}
+                                <option {{ slug == service.slug ? 'selected' : ''}} value="{{service.title}}">{{service.title}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+            <label id="order_label">
+                        <input
+                            type="email"
+                            name="email"
+                            id=""
+                            placeholder="{{'order_form.email' | _}}:"
+                            aria-label="{{'order_form.email' | _}}"
+                        />
+                        <span></span>
+            </label>
+            <label id="order_label">
+                <textarea
+                    name="description"
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="{{'order_form.description' | _}}"
+                    aria-label="{{'order_form.description' | _}}"
+                ></textarea>
+                <span></span>
+            </label>
+            <button class="btn flex-center">{{'order_form.send' | _}}</button>
+        </form>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="backdrop flex-center flex-direct-col">
+    <div id="modal" class="modal flex align-items-center">
+        <div class="modal__img">
+            <img src="{{success_form_image_first}}" alt="{{'succes_modal.first' | _}}" />
+        </div>
+        <div class="modal__content">
+            <h3>
+                {{'succes_modal.first' | _}}
+            </h3>
+        </div>
+        <button id="modal_close" type="button" aria-label="">
+            <svg
+              width="52"
+              height="52"
+              viewBox="0 0 52 52"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="14.9668"
+                y="11.0234"
+                width="37"
+                height="2"
+                rx="1"
+                transform="rotate(50.5995 14.9668 11.0234)"
+                fill="#D9D9D9"
+              />
+              <rect
+                x="38.5898"
+                y="12.4219"
+                width="37"
+                height="2"
+                rx="1"
+                transform="rotate(129.984 38.5898 12.4219)"
+                fill="#D9D9D9"
+              />
+            </svg>
+          </button>
+    </div>
+</div>

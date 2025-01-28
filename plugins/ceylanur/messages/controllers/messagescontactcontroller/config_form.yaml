@@ -1,0 +1,10 @@
+name: MessagesContactController
+form: $/ceylanur/messages/models/messagescontact/fields.yaml
+modelClass: Ceylanur\Messages\Models\MessagesContact
+defaultRedirect: ceylanur/messages/messagescontactcontroller
+create:
+    redirect: 'ceylanur/messages/messagescontactcontroller/update/:id'
+    redirectClose: ceylanur/messages/messagescontactcontroller
+update:
+    redirect: ceylanur/messages/messagescontactcontroller
+    redirectClose: ceylanur/messages/messagescontactcontroller

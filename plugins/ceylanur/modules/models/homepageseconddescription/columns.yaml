@@ -1,0 +1,16 @@
+columns:
+    id:
+        label: id
+        type: number
+    title:
+        label: 'Заголовок первой секции'
+        type: text
+    text:
+        label: 'Текст первой секции'
+        type: text
+    image_title:
+        label: 'Заголовок Изображения'
+        type: text
+    image_short_description:
+        label: 'Короткое описание изображения'
+        type: text

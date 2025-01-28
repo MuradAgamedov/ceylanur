@@ -1,0 +1,48 @@
+columns:
+    id:
+        label: id
+        type: number
+        invisible: false
+        sortable: true
+    image:
+        label: Изоброжение
+        type: image
+    card_image:
+        label: 'Мини изоброжение'
+        type: image
+    title:
+        label: Заголовок
+        type: text
+        searchable: true
+        sortable: true
+    slug:
+        label: Slug
+        type: text
+        searchable: true
+        sortable: true
+    status:
+        label: 'Видна на странице'
+        type: number
+        searchable: true
+        sortable: true
+    reversed:
+        label: 'Перевернутый'
+        type: number
+        searchable: true
+        sortable: true
+    created_at:
+        label: 'Дата добавление'
+        type: datetime
+        searchable: true
+        sortable: true
+    updated_at:
+        label: 'дата изменения'
+        type: datetime
+        searchable: true
+        sortable: true
+    deleted_at:
+        label: 'дата удаление'
+        type: datetime
+        searchable: true
+        sortable: true
+

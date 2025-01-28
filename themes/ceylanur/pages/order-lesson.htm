@@ -1,0 +1,22 @@
+url = "/xidmet-sifarisi/:slug"
+layout = "ceylanur-layout"
+title = "Xidmət sifarişi"
+
+[viewBag]
+localeUrl[ru] = "/zakaz-usluqi/:slug"
+localeUrl[en-gb] = "/order-service/:slug"
+localeTitle[ru] = "Заказ услуги"
+localeTitle[en-gb] = "Order service"
+
+[order_service]
+==
+{% put pages_css %}
+    <link rel="stylesheet" href="{{'assets/css/form.css' | theme}}" />
+{% endput %}  
+
+    {% component 'order_service' %}
+    
+
+{% put pages_scripts %}
+   <script src="{{'assets/js/order-service.js' | theme}}"></script>
+{% endput %}

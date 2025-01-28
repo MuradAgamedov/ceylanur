@@ -1,0 +1,10 @@
+name: FooterSocialsController
+form: $/ceylanur/socials/models/footersocials/fields.yaml
+modelClass: Ceylanur\Socials\Models\FooterSocials
+defaultRedirect: ceylanur/socials/footersocialscontroller
+create:
+    redirect: 'ceylanur/socials/footersocialscontroller/update/:id'
+    redirectClose: ceylanur/socials/footersocialscontroller
+update:
+    redirect: ceylanur/socials/footersocialscontroller
+    redirectClose: ceylanur/socials/footersocialscontroller

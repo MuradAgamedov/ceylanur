@@ -1,0 +1,10 @@
+name: GallaryPageSeoController
+form: $/ceylanur/seo/models/gallarypageseo/fields.yaml
+modelClass: Ceylanur\Seo\Models\GallaryPageSeo
+defaultRedirect: ceylanur/seo/gallarypageseocontroller
+create:
+    redirect: 'ceylanur/seo/gallarypageseocontroller/update/:id'
+    redirectClose: ceylanur/seo/gallarypageseocontroller
+update:
+    redirect: ceylanur/seo/gallarypageseocontroller
+    redirectClose: ceylanur/seo/gallarypageseocontroller

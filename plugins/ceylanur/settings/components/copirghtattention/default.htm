@@ -1,0 +1,81 @@
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.backdrop1 {
+    height: 100vh;
+    height: 100dvh;
+    height: 100svh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#copyrights {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__img {
+    height: 25rem;
+    flex:1;
+}
+
+.modal__img > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    text-align: justify;
+    font-size: 18px;
+    flex:2;
+}
+
+.modal__content > h3 {
+    font-size: clamp(24px, 5vw, 48px);
+}
+
+.modal__content > label > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+</style>
+
+<div class="backdrop1 flex-center flex-direct-col">
+    <div id="copyrights" class="modal cm flex align-items-center">
+        <div class="modal__img">
+            <img src="{{copyright_modal_image}}" alt="" />
+        </div>
+        <div class="modal__content">
+            <h3>{{'copyright_modal.title' | _}}</h3>
+            <p>
+                {{'copyright_modal.text' | _}}
+            </p>
+            <label for="copyrights">
+              <input class="copyrights_checkbox" type="checkbox" name="copyrights" id="" aria-label="" />
+              <a href="{{'copywrite' | page}}">{{'copyright_modal.apply_copyright' | _}}</a>
+            </label>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+list: $/ceylanur/seo/models/gallarypageseo/columns.yaml
+modelClass: Ceylanur\Seo\Models\GallaryPageSeo
+title: GallaryPageSeoController
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'ceylanur/seo/gallarypageseocontroller/update/:id'

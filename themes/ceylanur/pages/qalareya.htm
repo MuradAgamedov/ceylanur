@@ -1,0 +1,24 @@
+url = "/qalereya/:slug"
+layout = "ceylanur-layout"
+title = "qalereyam"
+
+[viewBag]
+localeUrl[ru] = "/qalareya/:slug"
+localeUrl[en-gb] = "/gallery/:slug"
+localeTitle[ru] = "Моя галерея"
+localeTitle[en-gb] = "My gallery"
+
+[gallery_details]
+==
+{% put pages_css %}
+        <link rel="stylesheet" href="{{'assets/css/galery-detail.css' | theme}}" />
+    {% endput %}
+
+
+   
+    {% component 'gallery_details' %}
+
+
+    {% put pages_scripts %}
+    <script src="{{'assets/js/galery-detail.js' | theme}}"></script>
+    {% endput %}

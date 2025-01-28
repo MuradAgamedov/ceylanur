@@ -1,0 +1,22 @@
+url = "/xidmetler/:slug"
+layout = "ceylanur-layout"
+title = "Xidmətlər"
+
+[viewBag]
+localeUrl[ru] = "/usluqi/:slug"
+localeUrl[en-gb] = "/services/:slug"
+localeTitle[ru] = "Услуги"
+localeTitle[en-gb] = "Services"
+
+[service_detail]
+==
+{% put pages_css %}
+    <link rel="stylesheet" href="{{'assets/css/services.css' | theme}}" />
+{% endput %}
+
+
+
+    {% component 'service_detail' %}
+
+{% put pages_scripts %}
+{% endput %}

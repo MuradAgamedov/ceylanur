@@ -1,0 +1,10 @@
+name: NavbarSocialsController
+form: $/ceylanur/socials/models/navbarsocials/fields.yaml
+modelClass: Ceylanur\Socials\Models\NavbarSocials
+defaultRedirect: ceylanur/socials/navbarsocialscontroller
+create:
+    redirect: 'ceylanur/socials/navbarsocialscontroller/update/:id'
+    redirectClose: ceylanur/socials/navbarsocialscontroller
+update:
+    redirect: ceylanur/socials/navbarsocialscontroller
+    redirectClose: ceylanur/socials/navbarsocialscontroller

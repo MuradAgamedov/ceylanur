@@ -1,0 +1,61 @@
+{% put page_seo_links %}
+{{seo.links | raw}}
+<meta name="keywords" content="{{seo.meta_keywords}}">
+<meta name="description" content="{{seo.meta_description}}">
+<title>{{seo.meta_title}}</title>
+{% endput %}
+
+    <section class="services reveal_first">
+        <div class="container">
+            <div class="serices__grid">
+                {% for service in services %}
+                <article>
+                    <a class="services__card flex flex-direct-col" href="{{ 'service'|page({slug: service.slug}) }}"
+                        title="{{service.title}}" aria-label="{{service.title}}">
+                        <div class="services__card-img">
+                            <img
+                            src="{{service.card_image.path}}"
+                            alt="{{service.title}}"
+
+                        />
+                        </div>
+                        <div class="services__card-content">
+                            <h4>{{service.title}}</h4>
+                            <p>
+                                   {% set replacements = {'&nbsp;': ' ', '&lt;': '', ":" : ': '} %}
+                                    {% set cleaned_description = service.text | replace(replacements) %}
+                            
+                                    {{ cleaned_description | striptags  | slice(0, 100)}} ...
+                              
+                            </p>
+                            <span class="flex"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </a>
+                </article>
+                {% endfor %}
+                <article>
+                    <a class="services__card flex flex-direct-col sc" href="{{ 'orderform'|page }}"
+                        title="{{'image.order' | _}}" aria-label="{{'image.order' | _}}">
+                        <div class="services__card-img">
+                            <img
+                            src="{{order_image}}"
+                            alt="{{'image.order' | _}}"
+
+                        />
+                        </div>
+                        <div class="services__card-content">
+                            <h4>{{'image.order' | _}}</h4>
+                            <p>
+                                {{'image.text' | _}}
+                            </p>
+                            <span class="flex"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+{% put page_seo_scripts %}
+{{seo.scripts | raw}}
+{% endput %}

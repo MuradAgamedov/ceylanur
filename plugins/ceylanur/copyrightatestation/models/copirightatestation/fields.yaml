@@ -1,0 +1,13 @@
+fields:
+    ip:
+        label: Ip
+        span: auto
+        type: text
+    time:
+        label: Time
+        span: auto
+        type: text
+    platform_info:
+        label: 'Platform info'
+        span: auto
+        type: text

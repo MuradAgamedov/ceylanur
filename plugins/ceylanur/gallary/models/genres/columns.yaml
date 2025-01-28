@@ -1,0 +1,35 @@
+columns:
+    id:
+        label: id
+        type: number
+        sortable: true
+    title:
+        label: Загаловок
+        type: text
+        searchable: true
+        sortable: true
+    slug:
+        label: slug
+        type: text
+        searchable: true
+        sortable: true
+    status:
+        label: 'Видна на странице'
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: 'Дата добавление'
+        type: datetime
+        searchable: true
+        sortable: true
+    updated_at:
+        label: 'Дата обновление'
+        type: datetime
+        searchable: true
+        sortable: true
+    deleted_at:
+        label: 'Дата удаление'
+        type: datetime
+        searchable: true
+        sortable: true

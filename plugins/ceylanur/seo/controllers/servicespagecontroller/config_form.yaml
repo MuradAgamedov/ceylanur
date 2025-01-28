@@ -1,0 +1,10 @@
+name: ServicesPageController
+form: $/ceylanur/seo/models/servicespageseo/fields.yaml
+modelClass: Ceylanur\Seo\Models\ServicesPageSeo
+defaultRedirect: ceylanur/seo/servicespagecontroller
+create:
+    redirect: 'ceylanur/seo/servicespagecontroller/update/:id'
+    redirectClose: ceylanur/seo/servicespagecontroller
+update:
+    redirect: ceylanur/seo/servicespagecontroller
+    redirectClose: ceylanur/seo/servicespagecontroller

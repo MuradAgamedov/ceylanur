@@ -1,0 +1,10 @@
+name: ContactFormPageSeoDescriptionController
+form: $/ceylanur/seo/models/orderformseo/fields.yaml
+modelClass: Ceylanur\Seo\Models\OrderFormSeo
+defaultRedirect: ceylanur/seo/contactformpageseodescriptioncontroller
+create:
+    redirect: 'ceylanur/seo/contactformpageseodescriptioncontroller/update/:id'
+    redirectClose: ceylanur/seo/contactformpageseodescriptioncontroller
+update:
+    redirect: ceylanur/seo/contactformpageseodescriptioncontroller
+    redirectClose: ceylanur/seo/contactformpageseodescriptioncontroller

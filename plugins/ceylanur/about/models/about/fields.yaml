@@ -1,0 +1,50 @@
+fields:
+    first_image:
+        label: 'Первое изоброжение'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    first_title:
+        label: 'Загаловок первой секции'
+        size: small
+        span: auto
+        required: 1
+        type: richeditor
+    first_text:
+        label: 'Первый текст первой секции'
+        size: large
+        span: auto
+        required: 1
+        type: richeditor
+    first_text_second:
+        label: 'Второй текст первой секции'
+        size: large
+        span: auto
+        type: richeditor
+    second_image:
+        label: 'Второе изоброжение'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    second_title:
+        label: 'Заголовок второй секции'
+        size: small
+        span: auto
+        required: 1
+        type: richeditor
+    second_text:
+        label: 'Текст второй секции'
+        size: large
+        span: full
+        required: 1
+        type: richeditor

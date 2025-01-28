@@ -1,0 +1,10 @@
+name: CopyrightPageSeoController
+form: $/ceylanur/seo/models/copywriteseo/fields.yaml
+modelClass: Ceylanur\Seo\Models\CopywriteSeo
+defaultRedirect: ceylanur/seo/copyrightpageseocontroller
+create:
+    redirect: 'ceylanur/seo/copyrightpageseocontroller/update/:id'
+    redirectClose: ceylanur/seo/copyrightpageseocontroller
+update:
+    redirect: ceylanur/seo/copyrightpageseocontroller
+    redirectClose: ceylanur/seo/copyrightpageseocontroller

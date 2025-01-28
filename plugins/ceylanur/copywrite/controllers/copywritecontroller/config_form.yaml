@@ -1,0 +1,10 @@
+name: CopyWriteController
+form: $/ceylanur/copywrite/models/copywrite/fields.yaml
+modelClass: Ceylanur\Copywrite\Models\CopyWrite
+defaultRedirect: ceylanur/copywrite/copywritecontroller
+create:
+    redirect: 'ceylanur/copywrite/copywritecontroller/update/:id'
+    redirectClose: ceylanur/copywrite/copywritecontroller
+update:
+    redirect: ceylanur/copywrite/copywritecontroller
+    redirectClose: ceylanur/copywrite/copywritecontroller

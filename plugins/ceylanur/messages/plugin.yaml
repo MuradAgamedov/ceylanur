@@ -1,0 +1,24 @@
+plugin:
+    name: 'ceylanur.messages::lang.plugin.name'
+    description: 'ceylanur.messages::lang.plugin.description'
+    author: ceylanur
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Сообщения
+        url: /
+        icon: icon-users
+        sideMenu:
+            side-menu-item:
+                label: 'Запросы на контакты'
+                url: ceylanur/messages/messagescontactcontroller
+                icon: icon-envelope-square
+            side-menu-item2:
+                label: Заказы
+                url: ceylanur/messages/messagesordercontroller
+                icon: icon-shopping-cart
+            side-menu-item3:
+                label: 'Заказ услуги'
+                url: ceylanur/messages/messagesorderservicecontroller
+                icon: icon-tablet

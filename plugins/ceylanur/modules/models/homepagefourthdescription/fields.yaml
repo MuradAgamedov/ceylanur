@@ -1,0 +1,63 @@
+fields:
+    first_video:
+        label: 'Первое видео'
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    first_video_title:
+        label: 'Заголовок первого видео'
+        span: auto
+        required: 1
+        type: text
+    first_video_short_description:
+        label: 'Короткое описание первой видео'
+        size: small
+        span: full
+        required: 1
+        type: richeditor
+    second_video:
+        label: 'Второе видео'
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    second_video_title:
+        label: 'Заголовок второго видео'
+        span: auto
+        required: 1
+        type: text
+    second_video_short_description:
+        label: 'Короткое описание видео'
+        size: small
+        span: full
+        type: richeditor
+    third_video:
+        label: 'Третье видео'
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    third_vido_title:
+        label: 'Заголовок третого видео'
+        span: auto
+        required: 1
+        type: text
+    third_video_short_description:
+        label: 'Короткое описание третого видео'
+        size: small
+        span: full
+        required: 1
+        type: richeditor

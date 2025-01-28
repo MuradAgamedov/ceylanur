@@ -1,0 +1,31 @@
+columns:
+    id:
+        label: id
+        type: number
+    facebook_link:
+        label: 'facebook link'
+        type: text
+    twitter_link:
+        label: 'twitter link'
+        type: text
+    telegram_link:
+        label: 'telegram link'
+        type: text
+    youtube_link:
+        label: 'youtube link'
+        type: text
+    whatsapp_number:
+        label: 'whatsapp number'
+        type: text
+    instagram_link:
+        label: 'instagram link'
+        type: text
+    copywrite_text:
+        label: 'текст копирайта'
+        type: text
+    email:
+        label: 'Электронная почта'
+        type: text
+    tiktok_link:
+        label: 'tiktok link'
+        type: text

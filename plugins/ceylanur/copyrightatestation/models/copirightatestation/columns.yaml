@@ -1,0 +1,20 @@
+columns:
+    id:
+        label: id
+        type: number
+        sortable: true
+    ip:
+        label: 'IP адресс'
+        type: text
+        searchable: true
+        sortable: true
+    time:
+        label: Время
+        type: text
+        searchable: true
+        sortable: true
+    platform_info:
+        label: 'Информация о платформе'
+        type: text
+        searchable: true
+        sortable: true

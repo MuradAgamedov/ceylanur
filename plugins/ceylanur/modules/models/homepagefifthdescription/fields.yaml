@@ -1,0 +1,22 @@
+fields:
+    image:
+        label: Изоброжение
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    title:
+        label: Заголовок
+        span: auto
+        required: 1
+        type: text
+    text:
+        label: Текст
+        size: large
+        span: full
+        required: 1
+        type: richeditor

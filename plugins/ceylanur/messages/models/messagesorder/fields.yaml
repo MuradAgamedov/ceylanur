@@ -1,0 +1,30 @@
+fields:
+    name:
+        label: Имя
+        span: auto
+        type: text
+    surname:
+        label: Фамилия
+        span: auto
+        type: text
+    client_email:
+        label: Электронная
+        span: auto
+        type: text
+    tel:
+        label: Телефон
+        span: auto
+        type: text
+    genre:
+        label: Жанр
+        span: auto
+        type: text
+    technique:
+        label: Техника
+        span: auto
+        type: text
+    description:
+        label: Сообщение
+        size: huge
+        span: full
+        type: textarea

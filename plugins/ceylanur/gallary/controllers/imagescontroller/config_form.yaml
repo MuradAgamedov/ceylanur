@@ -1,0 +1,10 @@
+name: ImagesController
+form: $/ceylanur/gallary/models/images/fields.yaml
+modelClass: Ceylanur\Gallary\Models\Images
+defaultRedirect: ceylanur/gallary/imagescontroller
+create:
+    redirect: 'ceylanur/gallary/imagescontroller/update/:id'
+    redirectClose: ceylanur/gallary/imagescontroller
+update:
+    redirect: ceylanur/gallary/imagescontroller
+    redirectClose: ceylanur/gallary/imagescontroller

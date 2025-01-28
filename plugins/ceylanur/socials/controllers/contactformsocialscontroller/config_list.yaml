@@ -1,0 +1,12 @@
+list: $/ceylanur/socials/models/sontactformsocials/columns.yaml
+modelClass: Ceylanur\Socials\Models\SontactFormSocials
+title: ContactFormSocialsController
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'ceylanur/socials/contactformsocialscontroller/update/:id'

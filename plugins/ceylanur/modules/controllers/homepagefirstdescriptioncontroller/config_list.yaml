@@ -1,0 +1,12 @@
+list: $/ceylanur/modules/models/homepagefirstdescription/columns.yaml
+modelClass: Ceylanur\Modules\Models\HomePageFirstDescription
+title: HomePageFirstDescriptionController
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'ceylanur/modules/homepagefirstdescriptioncontroller/update/:id'

@@ -1,0 +1,43 @@
+    {% put page_seo_links %}
+        {{service.links | raw}}
+        <meta name="keywords" content="{{service.meta_keywords}}">
+        <meta name="description" content="{{service.meta_description}}">
+        <title>{{service.meta_title}}</title>
+    {% endput %}
+    {% if service.reversed %}
+        {% set wrapper_class = 'swd' %}
+    {% else %}
+        {% set wrapper_class = '' %}
+    {% endif %}
+      <section class="detail">
+        <div class="container">
+          <div class="services__wrapper reveal_first flex align-items-center ">
+            <div class="services__warpper-img">
+              <img
+                src="{{service.image.path}}"
+                alt="{{service.title}}"
+                width=""
+                height=""
+              />
+            </div>
+            <div class="services__wrapper-detail flex flex-direct-col {{ wrapper_class }}">
+              <h2>{{service.title}}</h2>
+              <p>
+               {{service.text | raw}}
+              </p>
+              <a
+                href="{{ 'order-lesson'|page({slug: service.slug}) }}"
+                title="{{'service.apply_button' | _}}"
+                aria-label="{{'service.apply_button' | _}}"
+                class="btn flex-center"
+              >
+                {{'service.apply_button' | _}}
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+ {% put page_seo_scripts %}
+    {{service.scripts | raw}}
+ {% endput %}

@@ -1,0 +1,16 @@
+columns:
+    id:
+        label: id
+        type: number
+    section_title:
+        label: 'Заголовок - о нас'
+        type: text
+    section_subtitle_text:
+        label: 'Заголовок  подте́кста'
+        type: text
+    title:
+        label: 'Заголовок видео'
+        type: text
+    text:
+        label: 'Текст видео'
+        type: text

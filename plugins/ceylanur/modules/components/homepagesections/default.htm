@@ -1,0 +1,318 @@
+ {% put page_seo_links %}
+    {{seo.links | raw}}
+    <meta name="keywords" content="{{seo.meta_keywords}}">
+    <meta name="description" content="{{seo.meta_description}}">
+    <title>{{seo.meta_title}}</title>
+ {% endput %}
+
+ <!-- Biography -->
+      <section class="biography">
+        <div class="container">
+          <div class="reveal_first biography__wrapper flex">
+            <div class="biography__detail">
+              {{first_title | raw}}
+              <div>
+                 <p>
+                     {% set replacements = {'&nbsp;': ' ', '&lt;': '', ":" : ': '} %}
+                                    {% set cleaned_description = first_text | replace(replacements) %}
+                            
+                                    {{ cleaned_description | raw}} 
+                
+                 </p>
+              </div>
+            </div>
+            <div class="biography__img">
+              <div>
+                <img alt="{{first_image_title | raw}}" src="{{first_image}}"  />
+                <a
+                  class="wp_contact flex-center"
+                  href="https://wa.me/{{settings}}"
+                  target="_blank"
+                  aria-label="WhatsApp"
+                  title="WhatsApp"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                    <g filter="url(#filter0_f_1552_1776)">
+                      <circle cx="6.5" cy="6.5" r="4.5" fill="#29BB5B" fill-opacity="0.54"/>
+                    </g>
+                    <circle cx="6.49993" cy="6.50335" r="3.21429" fill="#29BB5B"/>
+                    <defs>
+                     <filter id="filter0_f_1552_1776" x="0.5" y="0.5" width="12" height="12" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                       <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                       <feGaussianBlur stdDeviation="0.75" result="effect1_foregroundBlur_1552_1776"/>
+                     </filter>
+                    </defs>
+                  </svg>
+                  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                  <span>WhatsApp</span>
+                </a>
+              </div>
+              <div class="picture__name flex align-items-center">
+                <span>{{first_image_title}}</span>
+                <span>{{first_image_short_description | raw}}</span>
+              </div>
+            </div>
+          </div>
+          <div class="reveal biography__wrapper bw2 flex">
+            <div class="biography__img biography__img_hgt">
+              <img src="{{second_first_image}}" alt="{{second_first_image_title | striptags}}" />
+              <div class="picture__name flex align-items-center">
+                <span>{{second_first_image_title | raw}}</span>
+                <span>{{second_first_image_short_description | raw}}</span>
+              </div>
+            </div>
+            <div class="biography__detail">
+              <h2>{{second_title}}</h2>
+              <div>
+                  <p>
+                   {{second_first_text | raw}}
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about">
+        <div class="container">
+          <div class="reveal about__top">
+            <h2>{{section_title}}</h2>
+            <div>
+              <p>
+                {{section_subtitle_text | raw}}
+              </p>
+            </div>
+          </div>
+          <div class="reveal about__bottom flex align-items-center">
+            <div class="about__bottom-video">
+              <picture name="media">
+                <img
+                  src="{{video}}"
+                  alt="{{title}}"
+                />
+              </picture>
+            </div>
+            <div class="about__bottom-details">
+              <h3>{{title}}</h3>
+              <div>
+                  <p>
+                   {{text | raw}}
+                  </p>
+              </div>
+              <a
+                href="{{'about' | page}}"
+                aria-label="{{'menu.about'| _}}"
+                title="{{'menu.about'| _}}"
+                class="btn flex-center"
+              >
+                {{'home_about.more' | _}}
+              </a>
+            </div>
+          </div>
+
+          <div class="about__videos flex">
+            <div class="reveal about__video abv1">
+              <picture name="media">
+                <img
+                  src="{{first_video}}"
+                  alt="{{first_video_title}}"
+                />
+              </picture>
+              <div class="picture__name flex align-items-center">
+                <span>{{first_video_title}}</span>
+                {% set replacements = {'&nbsp;': ' ', '&lt;': '', '<br>': ' ', ":" : ': ', ' ': ''} %}
+                {% set cleaned_description = first_video_short_description | striptags('<br>') | replace(replacements) %}
+                {% set trimmed_description = cleaned_description | slice(0, 50) %}
+            
+                <span>{{cleaned_description}}</span>
+              </div>
+            </div>
+            <div class="reveal about__video abv2">
+              <picture name="media">
+                <img
+                  src="{{second_video}}"
+                  alt="{{second_video_title}}"
+                />
+              </picture>
+              <div class="picture__name flex align-items-center">
+                <span>{{second_video_title}}</span>
+                 {% set replacements = {'&nbsp;': ' ', '&lt;': '', '<br>': ' ', ":" : ': ', ' ': ''} %}
+                {% set cleaned_description = second_video_short_description | striptags('<br>') | replace(replacements) %}
+                {% set trimmed_description = cleaned_description | slice(0, 50) %}
+     
+                <span>{{cleaned_description}}</span>
+              </div>
+            </div>
+            <div class="reveal about__video abv3">
+              <picture name="media">
+                <img
+                  src="{{third_video}}"
+                  alt="{{third_vido_title}}"
+                />
+              </picture>
+              <div class="picture__name flex align-items-center">
+                <span>{{third_vido_title}}</span>
+                 {% set replacements = {'&nbsp;': ' ', '&lt;': '', '<br>': ' ', ":" : ': ', ' ': ''} %}
+                {% set cleaned_description = third_video_short_description | striptags('<br>') | replace(replacements) %}
+                {% set trimmed_description = cleaned_description | slice(0, 50) %}
+  
+                <span>{{cleaned_description}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Orders -->
+      <section class="orders">
+        <div class="container">
+          <div class="orders__wrapper flex align-items-center">
+            <div class="reveal orders__details flex flex-direct-col">
+              <h2>{{order_title}}</h2>
+              <div>
+                <p>
+                  {{order_text | raw}}
+                </p>
+              </div>
+              <a
+                href="{{'orderform' | page}}"
+                class="btn flex-center"
+                aria-label="{{'home_page.order_button' | _}}"
+                title="{{'home_page.order_button' | _}}"
+                >{{'home_page.order_button' | _}}</a
+              >
+            </div>
+            <div class="reveal orders__img">
+              <img src="{{order_image}}" alt="{{'home_page.order_button' | _}}" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Collections -->
+      <section class="collections">
+        <div class="container">
+          <div class="reveal collections__title">
+            <h2>{{'menu.home_page_collections_title' | _}}</h2>
+          </div>
+          <div class="reveal">{{"menu.home_page_collections_subtitle" | _}}</div>
+          {% for image in first_image_on_home_page %}
+              <div class="reveal collections__img">
+                <img src="{{image.image.path}}" alt="{{image.title}}" />
+                <div class="picture__name flex align-items-center">
+                  <span>{{image.title}}</span>
+                  <span>{{image.short_description}}</span>
+                </div>
+                <span class="status flex-center">{{image.availability == 2 ? 'image.available'|_ : 'image.sold'|_ }}</span>
+              </div>
+          {% endfor %}
+      
+          <div class="reveal collections__links">
+            
+            <a
+              href="{{'gallery' | page}}"
+              class="collections__link flex-center"
+              aria-label="{{'home_page_collections_section_links.my_gallary' | _}}"
+              title="{{'home_page_collections_section_links.my_gallary' | _}}"
+            >
+              {{'home_page_collections_section_links.my_gallary' | _}}
+            </a>
+              {% for genre in home_page_genres %}
+                      <a
+                     
+                          href="{{'gallery' | page}}"
+                          class="collections__link flex-center home_page_genres"
+                          aria-label="{{genre.title}}"
+                          title="{{genre.title}}"
+                          data-id={{genre.id}}
+                        >
+                          {{genre.title}}
+                        </a>
+              {% endfor %}
+    
+      
+        
+
+          </div>
+          <div class="reveal collections__products flex-center">
+                     {% for image in second_image_on_home_page %}
+                      <div class="collections__art">
+                          <img class = "flex align-items-center" src="{{image.image.path}}" alt="{{image.title}}" />
+                          <div class="picture__name flex align-items-center">
+                            <span>{{image.title}}</span>
+                            <span>{{image.short_description}}</span>
+                          </div>
+                          <span class="status flex-center">{{image.availability == 2 ? 'image.available'|_ : 'image.sold'|_ }}</span>
+                        </div>
+                        
+                        
+                    
+                  {% endfor %}
+                  {% for image in third_image_on_home_page %}
+                    
+                        
+                        <div class="collections__art">
+                          <img
+                          class = "flex align-items-center"
+                            src="{{image.image.path}}"
+                            alt="{{image.title}}"
+                          />
+                          <div class="picture__name flex align-items-center">
+                            <span>{{image.title}}</span>
+                            <span>{{image.short_description}}</span>
+                          </div>
+                        </div>
+                    
+                  {% endfor %}
+        
+          </div>
+        </div>
+      </section>
+
+      {% component 'contact_form' %}
+      
+
+
+
+
+      <!-- Copyrights modal -->
+      <div class="backdrop1 flex-center flex-direct-col">
+        <div id="copyrights" class="modal cm flex align-items-center">
+          <div class="modal__img">
+            <img src="{{'assets/imgs/homepage/copy_img.png' | theme}}" alt="" />
+          </div>
+          <div class="modal__content">
+            <h3>Müəllif Hüquqları</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur.
+            </p>
+            <label for="copyrights">
+              <input type="checkbox" name="copyrights" id="" aria-label="" />
+              Müəllif hüquqlarını qəbul et
+            </label>
+          </div>
+        </div>
+      </div>
+ {% put page_seo_scripts %}
+      <script>
+        document.querySelectorAll('.home_page_genres').forEach(link => {
+            link.addEventListener('click', () => {
+                localStorage.setItem("link", link.getAttribute('data-id'));
+            });
+        });
+    </script>
+
+    {{seo.scripts | raw}}
+ {% endput %}

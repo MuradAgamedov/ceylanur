@@ -1,0 +1,10 @@
+name: HomePageThirdDescriptionController
+form: $/ceylanur/modules/models/homepagethirddescription/fields.yaml
+modelClass: Ceylanur\Modules\Models\HomePageThirdDescription
+defaultRedirect: ceylanur/modules/homepagethirddescriptioncontroller
+create:
+    redirect: 'ceylanur/modules/homepagethirddescriptioncontroller/update/:id'
+    redirectClose: ceylanur/modules/homepagethirddescriptioncontroller
+update:
+    redirect: ceylanur/modules/homepagethirddescriptioncontroller
+    redirectClose: ceylanur/modules/homepagethirddescriptioncontroller

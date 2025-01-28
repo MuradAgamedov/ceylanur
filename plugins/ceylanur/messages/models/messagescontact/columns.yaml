@@ -1,0 +1,36 @@
+columns:
+    id:
+        label: id
+        type: number
+        searchable: false
+        sortable: true
+    name:
+        label: Имя
+        type: text
+        searchable: true
+        sortable: true
+    client_email:
+        label: 'Электронная почта'
+        type: text
+        searchable: true
+        sortable: true
+    mess:
+        label: Сообщение
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: 'Дата получение'
+        type: datetime
+        searchable: true
+        sortable: true
+    updated_at:
+        label: 'Дата обновление'
+        type: datetime
+        searchable: true
+        sortable: true
+    deleted_at:
+        label: 'Дата удаление'
+        type: datetime
+        searchable: true
+        sortable: true

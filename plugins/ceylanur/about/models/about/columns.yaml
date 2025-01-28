@@ -1,0 +1,16 @@
+columns:
+    id:
+        label: id
+        type: number
+    first_title:
+        label: 'Заголовок первой секции'
+        type: text
+    first_text:
+        label: 'Текст первой секции'
+        type: text
+    second_title:
+        label: 'Заголовок второй секции'
+        type: text
+    second_desc:
+        label: 'Текст второй секции'
+        type: text

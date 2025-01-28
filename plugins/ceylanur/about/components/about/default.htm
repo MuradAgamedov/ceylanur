@@ -1,0 +1,49 @@
+       {% put page_seo_links %}
+            {{seo.links | raw}}
+            <meta name="keywords" content="{{seo.meta_keywords}}">
+            <meta name="description" content="{{seo.meta_description}}">
+            <title>{{seo.meta_title}}</title>
+        {% endput %}
+
+      <section class="about">
+        <div class="container">
+          <div class="reveal_first about__part">
+            <div class="about__part-img">
+              <img src="{{about.first_image.path}}" alt="{{about.first_title | striptags}}" />
+            </div>
+            
+            <div class="about__part-detail">
+                {{about.first_title | raw}}
+              <div>
+                  {{about.first_text | raw}}
+              </div>
+            </div>
+            <div>{{about.first_text_second | raw}}</div>
+          </div>
+          <div class="about_load_more flex align-items-center">
+           <div class="more_line left_line"></div>
+             <button data-less="Daha az goster" data-more="Daha cox goster" class="flex-center">
+                 {{'gallary.load_more' | _}}
+             </button>
+           <div class="more_line right_line"></div>
+          </div>
+
+          <div class="reveal about__part abp2 flex">
+            <div class="about__part-detail">
+              {{about.second_title | raw}}
+              <div>
+                  <p>
+                   {{about.second_text | raw}}
+                  </p>
+              </div>
+              <a href="{{'services' | page}}" class="btn flex-center">{{'about.more' | _}}</a>
+            </div>
+            <div class="about__part-img">
+              <img src="{{about.second_image.path}}" alt="{{about.second_title | raw}}" />
+            </div>
+          </div>
+        </div>
+      </section>
+    {% put page_seo_scripts %}
+        {{seo.scripts | raw}}
+    {% endput %}

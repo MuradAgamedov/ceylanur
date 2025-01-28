@@ -1,0 +1,11 @@
+v1.0.1:
+    - 'Initialize plugin'
+v1.0.2:
+    - 'Created table ceylanur_settings_main'
+    - builder_table_create_ceylanur_settings_main.php
+v1.0.3:
+    - 'Updated table ceylanur_settings_main'
+    - builder_table_update_ceylanur_settings_main.php
+v1.0.4:
+    - 'Updated table ceylanur_settings_main'
+    - builder_table_update_ceylanur_settings_main_2.php

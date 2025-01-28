@@ -1,0 +1,10 @@
+name: ContactPageSeoController
+form: $/ceylanur/seo/models/contactpageseo/fields.yaml
+modelClass: Ceylanur\Seo\Models\ContactPageSeo
+defaultRedirect: ceylanur/seo/contactpageseocontroller
+create:
+    redirect: 'ceylanur/seo/contactpageseocontroller/update/:id'
+    redirectClose: ceylanur/seo/contactpageseocontroller
+update:
+    redirect: ceylanur/seo/contactpageseocontroller
+    redirectClose: ceylanur/seo/contactpageseocontroller
